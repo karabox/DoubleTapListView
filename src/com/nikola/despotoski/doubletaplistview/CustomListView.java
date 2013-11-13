@@ -51,6 +51,7 @@ public class CustomListView extends ListView{
     		switch(msg.what)
     		{
     		case SINGLE_TAP:
+    			mTookFirstEvent=false;
     			Log.i(TAG, "Single tap entry");
     			 mOnDoubleTapListener.OnSingleTap(mParent, mView, mPosition, mId);
     			 break;
